@@ -1,8 +1,8 @@
 /*eslint-disable object-shorthand*/
 const colors = {
-  primary: "#f9c300",
-  secondary: "black",
-  tertiary: "white"
+  primary: "#cb3837",
+  secondary: "white",
+  tertiary: "#37cacb"
 };
 
 const fonts = {
@@ -173,7 +173,7 @@ module.exports = {
         margin: 0
       },
       h3: {
-        color: "black",
+        color: colors.secondary,
         fontSize: "4.9em",
         fontFamily: fonts.secondary,
         lineHeight: 1,
@@ -181,7 +181,7 @@ module.exports = {
         margin: "0.5em auto"
       },
       h4: {
-        color: "black",
+        color: colors.secondary,
         fontSize: "3.82em",
         fontFamily: fonts.primary,
         lineHeight: 1,
@@ -189,7 +189,7 @@ module.exports = {
         margin: "0.5em auto"
       },
       h5: {
-        color: "black",
+        color: colors.secondary,
         fontSize: "3.19em",
         fontFamily: fonts.primary,
         lineHeight: 1,
@@ -197,7 +197,7 @@ module.exports = {
         margin: "0.5em auto"
       },
       h6: {
-        color: "black",
+        color: colors.secondary,
         fontSize: "2.66em",
         fontFamily: fonts.primary,
         lineHeight: 1,
@@ -224,7 +224,7 @@ module.exports = {
       strikethrough: {}
     },
     text: {
-      color: "black",
+      color: "white",
       fontSize: "2.66em",
       fontFamily: fonts.primary,
       margin: "0.25em auto"

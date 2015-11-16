@@ -10,9 +10,9 @@ import preloader from "../src/utils/preloader";
 import Interactive from "./interactive";
 
 const images = {
-  automation: require("./img/gifs/automation.gif"),
-  kat: require("./img/gifs/kat.png"),
-  logo: require("./img/gifs/formidable-logo.svg")
+  automation: require("./img/gifs/automation.gif")
+  ,mind_blowing: require("./img/gifs/mind-blowing.gif")
+  ,put_your_hands_up: require("./img/gifs/put-your-hands-up.gif")
 };
 
 preloader([images.city, images.kat]);
@@ -91,19 +91,15 @@ export default class extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
-          <Appear fid="2">
-            <Heading size={1} caps fit textColor="tertiary">
-              Automação
-            </Heading>
-          </Appear>
-          <Appear fid="3">
-            <Heading size={5} caps fit textColor="primary">
-              ???
-            </Heading>
-          </Appear>
+          <Heading size={2} caps fit textColor="tertiary">
+            Automação
+          </Heading>
+          <Heading size={5} caps fit textColor="primary">
+            ???
+          </Heading>
         </Slide>
 
-        <Slide transition={["fade"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["fade"]} bgImage={images.put_your_hands_up.replace("/", "")} bgDarken={0.75}>
 
           <Text textSize="5em" margin="20px 0px 0px" bold caps textColor="tertiary">Quem aqui precisa fazer?</Text>
 

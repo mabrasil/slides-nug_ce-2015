@@ -11,15 +11,21 @@ import Interactive from "./interactive";
 
 const images = {
   automation: require("./img/gifs/automation.gif")
+  ,communities: require("./img/other/communities.png")
+  ,ciço: require("./img/other/ciço.png")
   ,mind_blowing: require("./img/gifs/mind-blowing.gif")
   ,put_your_hands_up: require("./img/gifs/put-your-hands-up.gif")
-  ,gulp: require("./img/logos/task-runners/gulp.png")
-  ,grunt: require("./img/logos/task-runners/grunt.png")
-  ,broccoli: require("./img/logos/task-runners/broccoli.png")
+  ,task_runners: require("./img/other/task-runners.png")
   ,but_what: require("./img/gifs/but-what.gif")
   ,plugins: require("./img/other/plugins-hell.png")
   ,surprises: require("./img/other/surprises.png")
-  ,substack: require("./img/other/substack.jpg")
+  ,substack1: require("./img/other/substack1.jpg")
+  ,substack2: require("./img/other/substack2.jpg")
+  ,too_complicated: require("./img/other/too-complicated.png")
+  ,npm: require("./img/logos/npm-bg.png")
+  ,npm_seldo: require("./img/other/seldo.jpg")
+  ,npm_scripts: require("./img/other/script-object.png")
+  ,imagination: require("./img/other/trippin.jpg")
 };
 
 preloader([images.city, images.kat]);
@@ -33,6 +39,12 @@ export default class extends React.Component {
         <Heading size={1} textColor="secondary">
           !
         </Heading>
+      </Slide>
+
+      <Slide transition={["zoom", "fade"]} bgColor="white">
+
+        <Image width = "100%" src={images.ciço}/>
+
       </Slide>
 
       <Slide transition={["zoom"]} bgColor="primary">
@@ -67,7 +79,7 @@ export default class extends React.Component {
 
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
 
           <Text textSize="5em" margin="20px 0px 0px" bold caps textColor="tertiary">Eu sou:</Text>
 
@@ -76,10 +88,19 @@ export default class extends React.Component {
             <ListItem><Appear fid="2">Sommelier de linguagens de programação</Appear></ListItem>
             <ListItem><Appear fid="3">Alquimista da vida</Appear></ListItem>
             <ListItem><Appear fid="4">Estudante de Informática no IFCE </Appear></ListItem>
+            <ListItem><Appear fid="4">E... </Appear></ListItem>
           </List>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["slide", "fade"]} bgColor="white">
+
+          <Text textSize="3em" margin="20px 0px 0px" bold caps textColor="primary">Um apaixonado por comunidades!</Text>
+
+          <Image width = "75%" src={images.communities}/>
+
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="secondary" textColor="primary">
 
           <Text textSize="5em" margin="20px 0px 0px" bold caps textColor="tertiary">'Cês podem me achar:</Text>
 
@@ -103,13 +124,13 @@ export default class extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={["slide"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["fade"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
             Automação???
           </Heading>
         </Slide>
 
-        <Slide transition={["fade"]} bgImage={images.put_your_hands_up.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.put_your_hands_up.replace("/", "")} bgDarken={0.75}>
 
           <Text textSize="5em" margin="20px 0px 0px" bold caps textColor="tertiary">Quem aqui precisa fazer?</Text>
 
@@ -124,7 +145,7 @@ export default class extends React.Component {
         </Slide>
 
 
-        <Slide transition={["slide"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["fade"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
             O que usamos???
           </Heading>
@@ -132,11 +153,7 @@ export default class extends React.Component {
 
         <Slide transition={["zoom", "fade"]} bgColor="white">
 
-          <Layout>
-            <Image width="40%" src={images.gulp}/>
-            <Image width="40%" src={images.grunt}/>
-            <Image width="40%" src={images.broccoli}/>
-          </Layout>
+          <Image width="70%" src={images.task_runners}/>
 
           <Heading>...</Heading>
 
@@ -160,17 +177,301 @@ export default class extends React.Component {
           </Heading>
         </Slide>
 
-        <Slide transition={["slide"]} bgImage={images.surprises.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.too_complicated.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
             Complicações desnecessárias
           </Heading>
         </Slide>
 
-        <Slide transition={["slide"]} bgImage={images.substack.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.substack1.replace("/", "")} bgDarken={0.75}>
           <BlockQuote>
             <Quote>There are some fancy tools for doing build automation on javascript projects that I have never felt the appeal of [...]</Quote>
             <Cite>James "Substack" Halliday</Cite>
           </BlockQuote>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.substack2.replace("/", "")} bgDarken={0.75}>
+          <BlockQuote>
+            <Quote>[...] because the lesser-known npm run command has been perfectly adequate for everything I've needed [...]</Quote>
+            <Cite>James "Substack" Halliday</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.npm.replace("/", "")}>
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary">
+
+          <Heading size={2} fit lineHeight={1} textColor="white">
+            npm?
+          </Heading>
+
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.npm_seldo.replace("/", "")} bgDarken={0.75}>
+          <Heading size={2} fit caps lineHeight={1} textColor="primary">
+            Sim :)
+          </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.npm_scripts.replace("/", "")} bgDarken={0.75}>
+          <BlockQuote>
+            <Quote>An object which exposes additional npm commands.</Quote>
+            <Cite>Nodejitsu</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.imagination.replace("/", "")} bgDarken={0.75}>
+          <Heading size={2} fit caps lineHeight={1} textColor="primary">
+            Vamos imaginar...
+          </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.npm_scripts.replace("/", "")} bgDarken={0.75}>
+          <BlockQuote>
+            <Quote>An object which exposes additional npm commands.</Quote>
+            <Cite>Nodejitsu</Cite>
+          </BlockQuote>
+        </Slide>
+
+        {/* JSHint Examples */}
+        <Slide transition={["zoom", "fade"]} bgColor="tertiary">
+
+          <Heading size={2} fit lineHeight={1} textColor="white">
+            Linting
+          </Heading>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Grunt...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/jshint/grunt.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Gulp...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/jshint/gulp.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No NPM...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/jshint/npm.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        {/* Browsersync Examples */}
+        <Slide transition={["zoom", "fade"]} bgColor="tertiary">
+
+          <Heading size={2} fit lineHeight={1} textColor="white">
+            Servindo
+          </Heading>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Grunt...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/browser-sync/grunt.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Gulp...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/browser-sync/gulp.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No NPM...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/browser-sync/npm.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        {/* Cleaning Examples */}
+        <Slide transition={["zoom", "fade"]} bgColor="tertiary">
+
+          <Heading size={2} fit lineHeight={1} textColor="white">
+            Limpando
+          </Heading>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Grunt...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/clean/grunt.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Gulp...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/clean/gulp.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No NPM...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/clean/npm.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        {/* Styles Examples */}
+        <Slide transition={["zoom", "fade"]} bgColor="tertiary">
+
+          <Heading size={2} fit lineHeight={1} textColor="white">
+            Estilos
+          </Heading>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Grunt...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/sass/grunt.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Gulp...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/sass/gulp.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No NPM...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/sass/npm.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        {/* Templates Examples */}
+        <Slide transition={["zoom", "fade"]} bgColor="tertiary">
+
+          <Heading size={2} fit lineHeight={1} textColor="white">
+            Templating
+          </Heading>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Grunt...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/jade/grunt.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No Gulp...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/jade/gulp.ex")}
+            margin="20px auto"/>
+
+        </Slide>
+
+        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+          <Heading size={2} caps lineHeight={1} textColor="white">
+            No NPM...
+          </Heading>
+
+          <CodePane
+            lang="javascript"
+            source={require("raw!./snippets/jade/npm.ex")}
+            margin="20px auto"/>
+
         </Slide>
 
       </Deck>

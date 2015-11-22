@@ -40,6 +40,8 @@ export default class extends React.Component {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={800} progress="bar" >
 
+      {/* The reason why I'll be fast */}
+
       <Slide transition={["slide"]} bgColor="primary">
         <Heading size={1} textColor="secondary">
           !
@@ -51,6 +53,8 @@ export default class extends React.Component {
         <Image width = "100%" src={images.ciço}/>
 
       </Slide>
+
+      {/* Cover */}
 
       <Slide transition={["zoom"]} bgColor="primary">
 
@@ -84,6 +88,8 @@ export default class extends React.Component {
 
         </Slide>
 
+        {/* About me */}
+
         <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
 
           <Text textSize="5em" margin="20px 0px 0px" bold caps textColor="tertiary">Eu sou:</Text>
@@ -116,6 +122,8 @@ export default class extends React.Component {
           </List>
         </Slide>
 
+        {/* Index */}
+
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
 
           <Text textSize="5em" margin="20px 0px 0px" bold caps textColor="tertiary">Vamos falar de:</Text>
@@ -128,6 +136,8 @@ export default class extends React.Component {
             <ListItem><Appear fid="5">Galero usa?</Appear></ListItem>
           </List>
         </Slide>
+
+        {/* Why we do automation? */}
 
         <Slide transition={["fade"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
@@ -149,6 +159,7 @@ export default class extends React.Component {
           </List>
         </Slide>
 
+        {/* Tools */}
 
         <Slide transition={["fade"]} bgImage={images.automation.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
@@ -163,6 +174,8 @@ export default class extends React.Component {
           <Heading>...</Heading>
 
         </Slide>
+
+        {/* The problems */}
 
         <Slide transition={["slide"]} bgImage={images.but_what.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
@@ -188,6 +201,8 @@ export default class extends React.Component {
           </Heading>
         </Slide>
 
+         {/* A little on Substack */}
+
         <Slide transition={["slide"]} bgImage={images.substack1.replace("/", "")} bgDarken={0.75}>
           <BlockQuote>
             <Quote>There are some fancy tools for doing build automation on javascript projects that I have never felt the appeal of [...]</Quote>
@@ -201,6 +216,8 @@ export default class extends React.Component {
             <Cite>James "Substack" Halliday</Cite>
           </BlockQuote>
         </Slide>
+
+        {/* All hail NPM */}
 
         <Slide transition={["slide"]} bgImage={images.npm.replace("/", "")}>
         </Slide>
@@ -219,6 +236,7 @@ export default class extends React.Component {
           </Heading>
         </Slide>
 
+         {/* The script object */}
         <Slide transition={["slide"]} bgImage={images.npm_scripts.replace("/", "")} bgDarken={0.75}>
           <BlockQuote>
             <Quote>An object which exposes additional npm commands.</Quote>
@@ -226,6 +244,7 @@ export default class extends React.Component {
           </BlockQuote>
         </Slide>
 
+         {/* Trippin' time */}
         <Slide transition={["slide"]} bgImage={images.imagination.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
             Vamos imaginar...
@@ -568,6 +587,8 @@ export default class extends React.Component {
 
         </Slide>
 
+         {/* Cases */}
+
         <Slide transition={["slide"]} bgImage={images.confused.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
             Alguém usa?
@@ -594,6 +615,8 @@ export default class extends React.Component {
 
         </Slide>
 
+         {/* Conclusion */}
+
         <Slide transition={["slide"]} bgImage={images.confused.replace("/", "")} bgDarken={0.75}>
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
             Tenho que parar de usar meus task runners?
@@ -608,6 +631,7 @@ export default class extends React.Component {
 
         </Slide>
 
+         {/* Any doubts? */}
         <Slide transition={["zoom", "fade"]} bgImage={images.thinking.replace("/", "")} bgDarken={0.75}>
 
           <Heading size={2} fit caps lineHeight={1} textColor="white">
@@ -616,8 +640,7 @@ export default class extends React.Component {
 
         </Slide>
 
-
-         {/*  */}
+         {/* Final slide */}
         <Slide transition={["zoom", "fade"]} bgImage={images.finish.replace("/", "")} bgDarken={0.75}>
 
           <Heading size={2} fit caps lineHeight={1} textColor="white">

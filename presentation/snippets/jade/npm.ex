@@ -1,1 +1,1 @@
-"jade": "jade 'src/templates/*.jade' 'index.html' "
+"jade": "jade 'src/templates/*.jade' 'index.html'"

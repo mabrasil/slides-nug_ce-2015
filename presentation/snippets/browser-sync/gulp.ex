@@ -10,4 +10,5 @@ module.exports = gulp.task('browser-sync', function () {
       baseDir: 'src/*'
     }
   });
+
 });

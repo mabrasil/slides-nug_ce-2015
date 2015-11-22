@@ -1,1 +1,1 @@
-"jshint": "jshint 'src/js/*.js' ",
+"jshint": "jshint 'src/js/*.js'",
